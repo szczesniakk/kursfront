@@ -7,10 +7,12 @@
     <title>Document</title>
   </head>
   <body>
-    <header>NAGŁÓWEK</header>
+    <header>
+      <h1>Portfolio Karolina Szczęśniak</h1>
+    </header>
 
     <!-- główna nawigacja -->
-    <nav>NAWIGACJA</nav>
+    <nav></nav>
     <!-- ordered list - lista numerowana -->
     <!-- <ol>
       <li></li>
@@ -21,14 +23,20 @@
     <!-- unordered list - lista nienumerowana -->
     <ul>
       <li>O MNIE</li>
-      <li>PROJEKTY</li>
+      <li>UMIEJĘTNOŚCI</li>
       <li>KONTAKT</li>
-      <li>Email</li>
     </ul>
 
-    <main>CONTENT</main>
+    <main>
+      <header>
+        <h2>O MNIE</h2>
+      </header>
+      <img src="img/PERSONAL IMAGE.png" alt="PERSONAL IMAGE" />
+    </main>
     <article>
-      <header>NAGŁÓWEK AUTONOMICZNEJ CZĘŚCI STRONY</header>
+      <header>
+        <h2>UMEJĘTNOŚCI</h2>
+      </header>
       <!-- im większy border tym grubsza tabelka -->
       <table border="10">
         <!-- nagłówek tabeli -->
@@ -58,7 +66,18 @@
         </tbody>
       </table>
     </article>
-    <section>TEMATYCZNIE ZGRUPOWANY KONTENT</section>
+    <section>
+      <header>
+        <h2>KONTAKT</h2>
+      </header>
+
+      <form>
+        <input type="email" placeholder="TWÓJ EMAIL" />
+        <input type="text" placeholder="TYTUŁ MAILA" />
+        <textarea cols="21" rows="5"></textarea>
+        <input type="submit" value="WYŚLIJ" />
+      </form>
+    </section>
     <footer>STOPKA</footer>
   </body>
 </html>
