@@ -1,3 +1,29 @@
 body {
   background-color: rgba(233, 187, 222, 0.663);
+  margin: 0px;
+}
+.bodyHeader {
+  border: 5px dashed red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h1 {
+  margin: 6px 10px;
+}
+
+ul {
+  border: 2px dashed green;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+li {
+  border: 5px dashed violet;
+}
+
+main header {
+  border: 5px dashed yellow;
 }
