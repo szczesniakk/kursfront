@@ -1,0 +1,47 @@
+body {
+  background-color: aqua;
+}
+* {
+  box-sizing: border-box;
+}
+main {
+  border: 5px dashed red;
+}
+article {
+  border: 5px dashed blue;
+  position: relative;
+  width: 90vw;
+  height: 90vw;
+}
+article p {
+  background-color: bisque;
+}
+
+article p,
+article img {
+  position: absolute;
+  width: 100%;
+  border: 5px dashed rgb(7, 85, 16);
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+article p {
+  background-color: blanchedalmond;
+  transition: 0.5s;
+}
+
+article p:active {
+  opacity: 0.5;
+}
+.sticky {
+  border: 5px dashed red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  position: absotute;
+}
