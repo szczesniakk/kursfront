@@ -18,23 +18,37 @@
         <li></li>
         <li></li>
       </ol> -->
+
+        <input type="checkbox" id="toggler" />
+        <label for="toggler">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+
         <!-- list item - element listy -->
         <!-- unordered list - lista nienumerowana -->
         <ul>
-          <li>O MNIE</li>
-          <li>UMIEJĘTNOŚCI</li>
-          <li>KONTAKT</li>
+          <li>
+            <a href="#about">O MNIE</a>
+          </li>
+          <li>
+            <a href="#skills">UMIEJĘTNOŚCI</a>
+          </li>
+          <li>
+            <a href="#contact">KONTAKT</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main class="wrapper">
+    <main id="about" class="wrapper">
       <header>
         <h2>O MNIE</h2>
       </header>
       <img src="img/PERSONAL IMAGE.png" alt="PERSONAL IMAGE" />
     </main>
-    <article class="wrapper">
+    <article id="skills" class="wrapper">
       <header>
         <h2>UMEJĘTNOŚCI</h2>
       </header>
@@ -67,7 +81,7 @@
         </tbody>
       </table>
     </article>
-    <section class="wrapper">
+    <section id="contact" class="wrapper">
       <header>
         <h2>KONTAKT</h2>
       </header>

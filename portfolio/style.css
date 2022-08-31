@@ -1,10 +1,11 @@
 body {
-  background-color: rgba(233, 187, 222, 0.663);
+  background-color: var(--background-dark);
   margin: 0px;
   min-height: 1000px;
 }
 .bodyHeader {
-  border: 5px dashed red;
+  background-color: var(--background-light);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,21 +13,38 @@ body {
   top: 0;
 }
 
-.h1 {
+h1 {
   margin: 6px 10px;
+  font-size: clamp(1rem, 1.3vw, 2rem);
+}
+
+#toggler:checked ~ ul {
+  right: 0;
 }
 
 ul {
-  border: 5px dashed green;
+  flex-direction: column;
+
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0.5;
   display: flex;
+  position: fixed;
+  right: -100%;
+  top: 2.1rem;
+  height: calc(100% - 2.1rem);
+  transition: 0.5s;
+  background-color: var(--foreground-light);
+  /* padding-top: 3rem; */
+}
+.bodyHeader a {
+  text-decoration: none;
+  color: inherit;
 }
 li {
-  border: 5px dashed violet;
   top: 0;
   left: 0;
+  margin: 0.3rem;
 }
 form {
   border: 5px dashed blue;
@@ -43,18 +61,71 @@ textarea {
 img {
   max-width: 100%;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   ul {
     /* display: none; */
-    flex-direction: column;
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+  }
+  label {
+    display: none;
   }
 }
 .wrapper {
-  border: 5px dashed rgb(46, 52, 45);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .wrapper header {
   width: 100%;
+}
+
+:root {
+  --foreground-dark: #a8657f;
+  --foreground-light: #f599bc;
+  --background-dark: #f5a77a;
+  --background-light: #f5eac6;
+}
+#toggler {
+  display: none;
+}
+label {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.15rem;
+}
+* {
+  box-sizing: border-box;
+}
+label div {
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  transition: 0.2s;
+}
+
+label div:nth-child(1) {
+  top: calc(22% - 1px);
+}
+label div:nth-child(2) {
+  top: calc(50% - 1px);
+}
+label div:nth-child(3) {
+  top: calc(78% - 1px);
+}
+#toggler:checked ~ label div:nth-child(1) {
+  transform: rotate(45deg);
+  top: calc(50% - 1px);
+}
+#toggler:checked ~ label div:nth-child(2) {
+  opacity: 0;
+}
+#toggler:checked ~ label div:nth-child(3) {
+  transform: rotate(-45deg);
+  top: calc(50% - 1px);
 }
