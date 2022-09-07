@@ -1,0 +1,19 @@
+table {
+  width: 50%;
+  border-collapse: collapse;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  text-align: center;
+}
+
+th {
+  background-color: rgb(165, 165, 224);
+}
+
+tr {
+  background-color: rgb(206, 206, 240);
+}
+
+tr:nth-child(even) {
+  background-color: rgb(165, 165, 224);
+}

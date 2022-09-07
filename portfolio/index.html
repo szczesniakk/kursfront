@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -66,28 +66,28 @@
     <main id="about" class="wrapper">
       <header>
         <h2>O MNIE</h2>
-      </header>
-      <div class="content">
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur
           quisquam ex illo doloribus quasi, soluta eius deleniti incidunt
           assumenda quam eum atque, nulla illum non nisi velit rem aspernatur
           voluptatum.
         </p>
+      </header>
+      <div class="content">
         <img src="img/chromosome.jpg" alt="PERSONAL IMAGE" />
       </div>
     </main>
     <article id="skills" class="wrapper">
       <header>
         <h2>UMEJĘTNOŚCI</h2>
-      </header>
-      <div class="content">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ex
           consequatur voluptatibus quos ipsum maxime. Qui, illum, illo sequi
           omnis mollitia maxime harum ab libero expedita neque non assumenda
           quis!
         </p>
+      </header>
+      <div class="content">
         <div class="tableWrapper">
           <table>
             <!-- nagłówek tabeli -->
@@ -116,6 +116,11 @@
               </tr>
               <tr>
                 <td>3</td>
+                <td>SASS (SCSS)</td>
+                <td>⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>4</td>
                 <td>JS</td>
                 <td>⭐</td>
               </tr>
@@ -128,14 +133,14 @@
     <section id="contact" class="wrapper">
       <header>
         <h2>KONTAKT</h2>
-      </header>
-      <div class="content">
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, magnam
           voluptatem. Repellat quisquam quam quia veniam quibusdam maiores nam,
           molestias praesentium aliquid laboriosam odio, omnis possimus quidem!
           Provident, modi ex.
         </p>
+      </header>
+      <div class="content">
         <form>
           <input type="email" placeholder="TWÓJ EMAIL" />
           <input type="text" placeholder="TYTUŁ MAILA" />
@@ -150,13 +155,17 @@
           <a href="#about">O mnie</a>
         </li>
         <li>
-          <a href="#skills">Doświadczenie</a>
+          <a href="#skills">Umiejętności</a>
         </li>
         <li>
           <a href="#contact">Kontakt</a>
         </li>
       </ol>
-      <p>Copyright &copy;2022</p>
+      <p>
+        Copyright
+        <sup>&copy;</sup>
+        2022
+      </p>
     </footer>
   </body>
 </html>
