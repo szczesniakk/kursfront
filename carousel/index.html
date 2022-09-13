@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script scr="script.js" defer></script>
+    <script src="script.js" defer></script>
     <style>
       body {
         background-color: bisque;
@@ -14,16 +14,27 @@
       h1 {
         text-align: center;
       }
+      h2 {
+        padding-left: 5rem;
+      }
       main {
         margin: 1rem;
       }
       .carousel {
-        border: 2px dashed red;
+        /* border: 2px dashed red; */
         display: flex;
         justify-content: space-between;
+        align-items: center;
       }
       .carousel div {
         cursor: pointer;
+        background-color: antiquewhite;
+        padding: 1rem 1.2rem;
+        margin: 0.5rem;
+        border-radius: 60%;
+      }
+      img {
+        max-width: 60%;
       }
     </style>
   </head>
@@ -38,7 +49,7 @@
       </header>
       <div class="carousel">
         <div class="left">&LeftArrow;</div>
-        <img src="" alt="zdjecie widoku" />
+        <img src="img/1.webp" alt="zdjecie widoku" />
         <div class="right">&RightArrow;</div>
       </div>
     </main>
