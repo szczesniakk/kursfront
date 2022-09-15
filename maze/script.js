@@ -9,12 +9,12 @@ const gamePlane = document.querySelector(".gamePlane");
 // type - rodzaj (start, meta, wall)
 function makeWall(x, y, w, h, type = "wall") {
   // ustaw kolor ściany
-  let color = "green"; // domyślny
+  let color = "#DCA1CC"; // domyślny
   if (type == "start") {
-    color = "blue";
+    color = "#5A5166";
   }
   if (type == "meta") {
-    color = "orange";
+    color = "#B4A1CC";
   }
 
   // Tworzymy nowy element HTML (div)
@@ -28,6 +28,10 @@ function makeWall(x, y, w, h, type = "wall") {
     left:${x}%;
     top:${y}%;
     position:absolute;
+    border-style:outset;
+    border-bottom-style:none;
+    border-top-style:none;
+   
   `;
   // dodajemy klasy do każdego diva
   wall.className = "wall";
@@ -136,7 +140,7 @@ const modal = {
   h1: document.createElement("h1"),
   init() {
     modal.dom.style.cssText = `
-    border:5px solid rgb(107, 143, 147);
+    border:5px solid #9283A6;
     position:fixed;
     width:80vw;
     height:80vh;
@@ -178,7 +182,7 @@ const modal = {
 
 modal.init();
 modal.show(
-  "Kliknij niebieski kafelek aby rozpocząć grę. <br/> Przesuń kursorem po zielonym murku do końca mapy. <br/> POWODZENIA! "
+  "Kliknij na ciemny kafelek aby rozpocząć grę. <br/> Przesuń kursorem po różowym murku do końca mapy. <br/> POWODZENIA! "
 );
 
 game.init();
