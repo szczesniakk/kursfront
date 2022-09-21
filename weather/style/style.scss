@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(75, 228, 177);
+  margin: 0;
+
+  main {
+    border: 2px dashed blue;
+    header {
+      .city {
+        border: 2px dashed yellow;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .mainInfo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            max-height: 7rem;
+          }
+          h2 {
+            margin: 0;
+          }
+        }
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(176, 187, 197);
+      #range {
+        width: 40%;
+        transform: scale(2);
+        margin: 2rem 0;
+        background-color: black;
+      }
+      .cube {
+        text-align: center;
+        border: 2px dashed violet;
+        width: 80%;
+        padding: 2rem 0;
+        margin-bottom: 2rem;
+        h3,
+        h4 {
+          margin: 0;
+        }
+        .weatherMain {
+          .minMax {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
