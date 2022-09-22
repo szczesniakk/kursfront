@@ -37,8 +37,11 @@ let list = [];
 
 const getWeatherInfo = (lat, lon) => {
   fetch(
-    `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=f7475169b48c1a3e45bdcaa1b374c413&units=metric&lang=pl`
+    `https://raw.githubusercontent.com/apietryga/kurs/master/api/weather/info/lat%3D${lat}%26lon%3D${lon}`
   )
+    // fetch(
+    //   `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=f7475169b48c1a3e45bdcaa1b374c413&units=metric&lang=pl`
+    // )
     .then((res) => res.json())
     .then((res) => {
       // console.log(res);
@@ -106,8 +109,11 @@ const changeCubeInfo = (index) => {
 const getLatLonDependOfName = () => {
   const value = document.querySelector("#location").value;
   fetch(
-    `https://api.openweathermap.org/geo/1.0/direct?q=${value}&appid=f7475169b48c1a3e45bdcaa1b374c413`
+    `https://raw.githubusercontent.com/apietryga/kurs/master/api/weather/location/${value.toLowerCase()}`
   )
+    // fetch(
+    //   `http://api.openweathermap.org/geo/1.0/direct?q=${value}&appid=f7475169b48c1a3e45bdcaa1b374c413`
+    // )
     .then((res) => res.json())
     .then((res) => {
       getWeatherInfo(res[0].lat, res[0].lon);
